@@ -3,7 +3,7 @@
 public class Main {
     public static void main(String[] args) {
         //region PUNTO 1
-       /// A)
+        /// A)
         Rectangle r = new Rectangle(2.5, 3.0);
 
         // C)
@@ -23,7 +23,7 @@ public class Main {
 
         /// F)
 
-        Rectangle r1= new Rectangle();
+        Rectangle r1 = new Rectangle();
 
         System.out.println(" High = " + r1.getHigh());
         System.out.println(" Width = " + r1.getWidth());
@@ -35,11 +35,18 @@ public class Main {
 
         //region PUNTO 2
 
-        Employee em1 = new Employee( 25000," Carlos Gutiérrez ", 23456345 );
-        Employee em2 = new Employee(27500," Ana Sanchez ", 34234123 );
+        Employee em1 = new Employee(25000, " Carlos Gutiérrez ", 23456345);
+        Employee em2 = new Employee(27500, " Ana Sanchez ", 34234123);
 
         System.out.println(" Salary $ " + em1.getSalary() + " Name " + em1.getNameAndLastname() + "DNI:" + em1.getDni());
         System.out.println(" Salary $ " + em2.getSalary() + " Name " + em2.getNameAndLastname() + "DNI:" + em2.getDni());
+
+        System.out.println(" Total salary  = $" + em1.increaseSalary(em1, 25000));
+
+        //endregion
+
+        //region PUNTO 3
+
 
     }
 }

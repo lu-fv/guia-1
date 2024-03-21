@@ -37,6 +37,13 @@ public class Employee {
         this.dni = dni;
     }
 
+    public Integer increaseSalary (Employee emp, Integer salary)
+    {
+        //Employee emp;
+        double increase = 1.15;
+        salary = (int) (emp.salary * increase);
 
+        return salary;
+    }
 
 }
