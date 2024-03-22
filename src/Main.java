@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -47,6 +49,25 @@ public class Main {
 
         //region PUNTO 3
 
+        Sale item = new Sale(1, " Yerba", 5, 900, 10);
+        Sale item1 = new Sale(2, " Yerba", 25, 900, 10);
+        item.product();
+        item1.product();
+
+        //endregion
+
+        //region PUNTO 4
+
+        bankCount count = new bankCount(1, "Camila Perez, ", 15000);
+
+        System.out.println(" BankCount [ ID: 1" + " Camila Perez " + " Balance: $15000" + "]");
+
+        System.out.println(" CREDITO + 2500 -> " + " Balance: $ " + count.credito(2500) + "]");
+
+        System.out.println(" DEBITO - 1500 ->" + " Balance: " + count.debito(1500) + "]");
+
+        System.out.println(" DEBITO -30000: ");
+        count.debito(30000);
 
     }
 }
